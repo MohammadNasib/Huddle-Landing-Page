@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* heading */
+
+.main {
+  padding: 5rem 5rem 0 5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50%;
+}
+
+.logo img {
+  width: 21rem;
+}
+
+.freeBtn {
+  border: 1px solid hsl(322, 100%, 66%);
+  font-family: "Open Sans", sans-serif;
+  color: hsl(322, 100%, 66%);
+  padding: 0.5rem 2rem;
+  background-color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.freeBtn:hover {
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+}
+
+/* home section */
+
+.homeSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem 0 1rem 0;
+  height: 73vh;
+  /* border: 2px solid red; */
+}
+
+.texts {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5rem;
+  margin-bottom: 2.3rem;
+}
+
+.community {
+  color: hsl(322, 100%, 66%);
+}
+
+.context {
+  text-align: center;
+  width: 45%;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.para {
+  font-size: 1.7rem;
+}
+
+.btn {
+  background-color: hsl(322, 100%, 66%);
+  font-size: 2rem;
+  padding: 1.7rem 7rem;
+  border: 1px solid hsl(322, 100%, 66%);
+  color: white;
+  border-radius: 3rem;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 1rem 1rem 3rem -2.3rem black;
+}
+
+.btn:hover {
+  color: hsl(322, 100%, 66%);
+  background-color: white;
+}
+
+/* stat Section */
+
+.statSection {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.img {
+  width: 81%;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  flex-direction: column;
+}
+
+.statDiv {
+  margin-bottom: 5rem;
+}
+
+.statDiv .heading {
+  margin-bottom: 0;
+  font-size: 5rem;
+}
+
+.icon {
+  width: 3rem;
+}
+
+.statDiv .para {
+  color: grey;
+}
+
+/* slogans Section */
+
+.growTogether,
+.flowingCoversations,
+.yourUsers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+  box-shadow: 1px 1px 21px -15px;
+  border: none;
+  border-radius: 1rem;
+}
+
+.card {
+  width: 45%;
+  margin-right: 11rem;
+}
+
+.pic {
+  width: 31%;
+}
+
+.flowingCoversations {
+  flex-direction: row-reverse;
+}
+
+.flowingCoversations .card {
+  margin-left: 11rem;
+  margin-right: 0;
+}
+
+/* marketing  */
+
+.marketing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 40vh;
+}
+
+.picture {
+  width: 81%;
+}
+
+/* footer */
+
+.footerSection {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  align-items: center;
+  padding: 5rem;
+  /* height: 60vh; */
+  background-color: #00252e;
+  color: white;
+}
+
+.footer {
+  padding: 0 3rem;
+  width: 40%;
+}
+
+.newsLetter {
+  width: 60%;
+  margin-left: 5rem;
+}
+
+.footerImg img,
+.para,
+.phone,
+.email {
+  margin-bottom: 2rem;
+}
+
+.footerImg img {
+  width: 80%;
+}
+
+.phone,
+.email {
+  font-size: 1.5rem;
+}
+
+.mailLogo,
+.phnLogo {
+  margin-right: 1rem;
+}
+
+.signUpInpt {
+  width: 31rem;
+  height: 5rem;
+  border: none;
+  margin: 0 2rem 2rem 0;
+  border-radius: 1rem;
+}
+
+.signUpBox .btn {
+  padding: 1rem 3rem;
+}
+
+/* media queries */
+
+@media screen and (max-width: 992px) {
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .context {
+    width: 90%;
+  }
+
+  .statDiv .heading {
+    font-size: 3rem;
+  }
+
+  .growTogether,
+  .flowingCoversations,
+  .yourUsers {
+    min-height: 40vh;
+  }
+
+  .card {
+    margin-right: 5rem;
+  }
+
+  .pic {
+    width: 35%;
+  }
+
+  .flowingCoversations .card {
+    margin-left: 5rem;
+  }
+
+  .footerSection {
+    padding: 3rem;
+  }
+
+  .footer {
+    padding: 0;
+  }
+
+  .signUpInpt {
+    width: 24rem;
+  }
+
+  .signUpBox .btn {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .statSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .picture {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .stats {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .statDiv {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .growTogether,
+  .flowingCoversations,
+  .yourUsers {
+    min-height: 50vh;
+    flex-direction: column-reverse;
+    padding: 0 3rem;
+  }
+
+  .card {
+    width: 80%;
+    margin: 3rem 0 0 0 !important;
+  }
+
+  .pic {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .main {
+    padding: 3rem 2rem;
+  }
+  .logo img {
+    width: 100%;
+  }
+
+  .para {
+    font-size: 1.5rem;
+  }
+
+  .homeSection {
+    height: 45vh;
+  }
+
+  .btn {
+    padding: 1.7rem 5rem;
+  }
+
+  .growTogether,
+  .flowingCoversations,
+  .yourUsers {
+    min-height: 45vh;
+  }
+
+  .footerSection {
+    padding: 3rem 1.7rem;
+  }
+
+  .mailLogo img,
+  .phnLogo img {
+    width: 7%;
+  }
+
+  .newsLetter {
+    margin-left: 3rem;
+  }
+
+  .signUpInpt {
+    margin: 0 1rem 1rem 0;
+  }
+
+  .signUpBox .btn {
+    font-size: 1.3rem;
+  }
+}
